@@ -1,0 +1,15 @@
+<div class="main">
+    <div class="container">
+    <%= simple_form_for(@adherent) do |f| %>
+        <%= f.input :prenom %>
+        <%= f.input :nom %>
+        <%= f.input :mail, placeholder: 'user@domain.com' %>
+        <%= f.input :telephone, placeholder: '+33 6 99 99 99 99' %>
+        <%= f.input :adresse, placeholder: '48 rue de varenne' %>
+        <%= f.input :codepostal, placeholder: '75007' %>
+        <%= f.input :ville, placeholder: 'Paris' %>
+        <%= f.input :master, as: :boolean, checked_value: true, unchecked_value: false %>
+        <%= f.submit %>
+    <% end %>
+    </div>
+</div>
